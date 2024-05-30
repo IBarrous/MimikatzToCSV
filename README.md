@@ -8,7 +8,7 @@ a custom powershell script designed to parse the content of Mimikatz and Export 
   <li> -InputFile <string> : The path to the Mimikatz output text file to be parsed.</li>
   <li> -OutputFile <string> : The path to the CSV file where the parsed credentials will be saved.</li>
   <li> -Vault : A switch to indicate if the input file contains vault::cred output. If this switch is set, the script will parse vault::cred credentials.</li>  
-  <li> -Help : A switch to display this help message.</li>
+  <li> -Help : A switch to display a help message.</li>
 </ul>
 <h3>Details :</h3>
 The script reads a Mimikatz output file, extracts relevant credential information (Usernames, SIDs, Domains, PlainText Passwords, Encrypted Passwords, Vault Credentials), and exports it to a specified CSV file. It supports parsing both sekurlsa::ekeys and vault::cred outputs, controlled by the -Vault switch.
