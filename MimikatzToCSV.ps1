@@ -136,5 +136,5 @@ try {
     $parsedObjects | Export-Csv -Path $OutputFile -NoTypeInformation
     Write-Host "[+] Parsed data has been exported to $OutputFile`n" -ForegroundColor Yellow    
 }catch{
-    Write-Error "Unable to Export the Mimikatz Output into The Given CSV file. Check whether the right permisions are set or if it is used by another process."
+    Write-Error $_
 }
